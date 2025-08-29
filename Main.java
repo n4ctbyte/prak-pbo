@@ -12,7 +12,11 @@ public class Main {
         System.out.println("=== BIODATA NAKATA ===");
         System.out.println("Nama : " + nama1);
         System.out.println("NIM : " + nim1);
-        System.out.println("IP Semester 1 " + ip1[0]);
+        System.out.println("IP Semester 1 : " + ip1[0]);
+        System.out.println("IP Semester 2 : " + ip1[1]);
+        
+        byte ipByte1 = (byte) ip1[0];
+        System.out.println("IP Semester 1 dalam byte : " + ipByte1);
         System.out.println("Alamat : " + alamat1);
         System.out.println("Umur : " + umur);
         System.out.println("Golongan Darah : " + golongan_darah);
