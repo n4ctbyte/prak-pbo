@@ -10,7 +10,7 @@ public class Main {
         double[] ip1 = {3.62, 3.67};
         String alamat1 = "Jalan Riau Ujung";
         int umur = 20;
-        char golongan_darah = 'O';
+        char golonganDarah = 'O';
 
         // print biodata
         System.out.println("=== BIODATA NAKATA ===");
