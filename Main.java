@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         // deklarasi dan inisialisasi variabel
         String nama1 = "Nakata Christian";
-        final long nim1 = 2407112366L;
+        final long NIM1 = 2407112366L;
 
         // ip dalam array
         double[] ip1 = {3.62, 3.67};
