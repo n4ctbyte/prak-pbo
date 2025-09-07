@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.ppbo01;
 
-/**
- *
- * @author ASUS
- */
+
 import java.util.Scanner; //mengimpor library scanner untuk input user
 
 public class PrakPbo3 {
@@ -44,3 +37,4 @@ public class PrakPbo3 {
         scanner.close(); //scanner ditutup karena input sudah selesai
     }
 }
+
