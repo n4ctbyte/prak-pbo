@@ -8,7 +8,7 @@ public class PrakPbo3 {
         
         //tampilan awal program
         System.out.println("========================================================");
-        System.out.println("   KALKULATOR BANGUN RUANG PRISMA TRAPESIUM (cm³)      ");
+        System.out.println("        KALKULATOR BANGUN RUANG PRISMA TRAPESIUM        ");
         System.out.println("========================================================");
         
         //input nilai dari prisma trapesium
@@ -29,12 +29,13 @@ public class PrakPbo3 {
 
         //output hasil luas alas dan volume prisma trapesium
         System.out.println("========================================================");
-        System.out.println("Luas alas trapesium: " + luasAlas + " cm²");
-        System.out.println("Volume prisma trapesium adalah: " + volume + " cm³");
+        System.out.println("Luas alas trapesium: " + luasAlas);
+        System.out.println("Volume prisma trapesium adalah: " + volume);
         System.out.println("========================================================");
 
         scanner.close(); //scanner ditutup karena input sudah selesai
     }
 }
+
 
 
