@@ -1,6 +1,5 @@
 package com.mycompany.ppbo01;
 
-
 import java.util.Scanner; //mengimpor library scanner untuk input user
 
 public class PrakPbo3 {
@@ -37,4 +36,5 @@ public class PrakPbo3 {
         scanner.close(); //scanner ditutup karena input sudah selesai
     }
 }
+
 
