@@ -58,5 +58,6 @@ public class PrakPbo4 {
                     System.out.println("Pilihan tidak valid. Tolong pilh antara 1-5");
             }
         } while (pilihan != 5); // kondisi yang jika terpenuhi maka program akan looping
+        sc.close(); // menutup scanner untuk mencegah resource leak
     }
 }
