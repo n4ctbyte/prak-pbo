@@ -2,11 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.ppbo01;
+package com.mycompany.ppbo;
 
 import java.util.Scanner;
 
-public class prakHasil04 {
+public class HasilPraktikum04 {
 
     public static void main(String[] args) {
         // Gunakan satu objek Scanner untuk semua input
@@ -140,4 +140,5 @@ public class prakHasil04 {
             System.out.println("Bilangan ganjil : " + e);
         }
     }
+
 }
