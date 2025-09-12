@@ -1,3 +1,5 @@
+package com.mycompany.ppbo;
+
 import java.util.Scanner; //mengimpor scanner
 
 public class Prakpbo4 {
