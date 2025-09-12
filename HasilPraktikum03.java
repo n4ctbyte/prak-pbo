@@ -1,7 +1,7 @@
 package Praktikum;
 import java.util.Scanner;
 
-public class HasilPrak {
+public class HasilPraktikum03 {
     public static void main(String[] args) {
         // OPERATOR
         // operator aritmatika
