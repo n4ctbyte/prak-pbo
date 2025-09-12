@@ -50,14 +50,8 @@ public class Prakpbo4 {
                 // Menghitung luas lingkaran
                 System.out.print("Masukkan jari-jari lingkaran (cm): ");
                 double jariJari = input.nextDouble();
-
-                if (jariJari % 7 == 0) {
-                    double luasLingkaran1 = (22.0 / 7.0) * jariJari * jariJari;
-                    System.out.println("Luas lingkaran tersebut adalah " + luasLingkaran1 + " cm");
-                } else {
-                    double luasLingkaran2 = 3.14 * jariJari * jariJari;
-                    System.out.println("Luas lingkaran tersebut adalah " + luasLingkaran2 + " cm");
-                }
+                double luasLingkaran2 = 3.14 * jariJari * jariJari;
+                System.out.println("Luas lingkaran tersebut adalah " + luasLingkaran2 + " cm");
             } 
             else if (pilihan == 4) {
                 // Menghitung luas segitiga
