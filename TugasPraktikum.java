@@ -1,4 +1,4 @@
-public class TugasPraktikumOOP {
+public class TugasPraktikum {
     public static void main(String[] args) {
         Game Mage = new Game("Shiroe (Mage)", 100, 150.0, 10, false);
         Game Assassin = new Game("Akatsuki (Assassin)", 100, 20, false);
