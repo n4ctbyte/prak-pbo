@@ -1,4 +1,3 @@
-package Praktikum;
 import java.util.Scanner; // mengimpor scanner
 
 public class PrakPbo3 {

@@ -1,4 +1,3 @@
-package Praktikum;
 import java.util.Scanner;
 
 public class KodePpt {
