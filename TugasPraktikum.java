@@ -4,6 +4,7 @@ public class TugasPraktikum {
         Game Assassin = new Game("Akatsuki (Assassin)", 100, 20, false);
         Game Guardian = new Game("Naotsugu (Guardian)", 250, false, 50);
 
+        Assassin.getInfo();
         Assassin.attack("Shiroe", 50);
         Mage.attack("Naotsugu");
         Guardian.attack();
@@ -58,5 +59,14 @@ class Game {
 
     public void attack() {
         System.out.println(namaPlayer + " menyerang!\n");
+    }
+
+    public void getInfo() {
+        System.out.println("Nama Player : " + namaPlayer);
+        System.out.println("Health : " + health);
+        System.out.println("Power : " + power);
+        System.out.println("Mana : " + mana);
+        System.out.println("Defend : " + defend);
+        System.out.println("Status : " + (isDead ? "Mokad" : "Idup\n"));
     }
 }
