@@ -1,9 +1,12 @@
 public class TugasPraktikum {
     public static void main(String[] args) {
+
+        // membuat object
         Game Mage = new Game("Shiroe (Mage)", 100, 150.0, 10, false);
         Game Assassin = new Game("Akatsuki (Assassin)", 100, 20, false);
         Game Guardian = new Game("Naotsugu (Guardian)", 250, false, 50);
 
+        // memanggil method
         Assassin.getInfo();
         Assassin.attack("Shiroe", 50);
         Mage.attack("Naotsugu");
@@ -12,6 +15,7 @@ public class TugasPraktikum {
 }
 
 class Game {
+    //deklarasi dan inisialisasi variabel
     private String namaPlayer;
     private int health;
     private int power;
@@ -19,6 +23,7 @@ class Game {
     private int defend;
     private boolean isDead;
 
+    // constructor pertama
     public Game(String namaPlayer, int health, int power, boolean isDead) {
         this.namaPlayer = namaPlayer;
         this.health = health;
@@ -28,6 +33,7 @@ class Game {
         this.defend = 0;
     }
 
+    // constructor kedua
     public Game(String namaPlayer, int health, double mana, int power, boolean isDead) {
         this.namaPlayer = namaPlayer;
         this.health = health;
@@ -37,6 +43,7 @@ class Game {
         this.defend = 0;
     }
 
+    // constructor ketiga
     public Game(String namaPlayer, int health, boolean isDead, int defend) {
         this.namaPlayer = namaPlayer;
         this.health = health;
@@ -46,6 +53,7 @@ class Game {
         this.mana = 0;
     }
 
+    // method overload untuk object
     public void attack(String target) {
         System.out.println(namaPlayer + " menyerang " + target + "!");
         System.out.println("Magic Damage : " + power + "\n");
