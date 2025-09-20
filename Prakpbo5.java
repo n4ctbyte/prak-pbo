@@ -20,8 +20,9 @@ public class Prakpbo5 {
         Huawei.isiDaya(100);
         Huawei.kirimPesan("0899-1122-3344", "Kayanya ada deh");
     }
+}
 
-    public static class Handphone {
+    class Handphone {
         // Atribut 
         private String merek;
         private String model;
@@ -94,4 +95,3 @@ public class Prakpbo5 {
             System.out.println("Isi pesannya: '" + isiPesan + "'.");
         }
     }
-}
