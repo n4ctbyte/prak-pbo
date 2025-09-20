@@ -1,4 +1,4 @@
-public class HasilPraktikum4 {
+public class HasilPraktikum5 {
     public static void main(String[] args) {
         // object instantiation
         Mobil mobil1 = new Mobil();
