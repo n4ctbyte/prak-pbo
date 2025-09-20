@@ -1,19 +1,20 @@
 public class Prakpbo5 {
 
     public static void main(String[] args) {
+        // Objek 1
         Handphone Samsung = new Handphone("Samsung", "Galaxy S24", "Hitam", 6.8, 2023, 12, 256, 50, false);
         Samsung.tampilkanInfo();
         Samsung.isiDaya(50);
-        Samsung.kirimPesan("0812-3456-7890");
-
+        Samsung.kirimPesan("0812-3456-7890", "Jadi pergi ga?");
         System.out.println();
 
+        //Objek 2
         Handphone Apple = new Handphone("Apple", "iPhone 15 Pro", "Pink");
         Apple.tampilkanInfo();
         Apple.kirimPesan("0812-9876-5432", "Hari ini ada asistensi ga?");
-
         System.out.println();
 
+        //Objek 3
         Handphone Huawei = new Handphone("Huawei", "Huawei Mate XT", 100);
         Huawei.tampilkanInfo();
         Huawei.isiDaya(100);
@@ -21,6 +22,7 @@ public class Prakpbo5 {
     }
 
     public static class Handphone {
+        // Atribut 
         private String merek;
         private String model;
         private String warna;
@@ -31,8 +33,7 @@ public class Prakpbo5 {
         private int levelBaterai;
         private boolean isFull;
 
-        // --- Constructor Overloading ---
-        
+        // Constructor Overloading
         // Constructor 1 
         public Handphone(String merek, String model, int levelBaterai) {
             this.merek = merek;
@@ -60,8 +61,7 @@ public class Prakpbo5 {
             this.isFull = isFull;
         }
 
-        // --- Method Overloading ---
-        
+        // Method Overloading 
         // Method 1
         public void tampilkanInfo() {
             System.out.println("======Informasi Handphone=====");
@@ -76,12 +76,6 @@ public class Prakpbo5 {
         }
 
         // Method 2 
-        public void isiDaya() { 
-            this.isFull = true;
-            this.levelBaterai = 100;
-            System.out.println("Baterai sudah terisi penuh.");
-        }
-        
         public void isiDaya(int persentase) { 
             if (persentase >= 100) {
                 this.isFull = true;
@@ -94,11 +88,7 @@ public class Prakpbo5 {
             }
         }
         
-        // Method 3 
-        public void kirimPesan(String nomorTujuan) { 
-            System.out.println("Mengirim pesan kepada " + nomorTujuan + ".");
-        }
-        
+        // Method 3         
         public void kirimPesan(String nomorTujuan, String isiPesan) { 
             System.out.println("Mengirim pesan kepada " + nomorTujuan);
             System.out.println("Isi pesannya: '" + isiPesan + "'.");
