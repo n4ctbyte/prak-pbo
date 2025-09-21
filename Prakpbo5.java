@@ -4,21 +4,21 @@ public class Prakpbo5 {
         // Objek 1
         Handphone Samsung = new Handphone("Samsung", "Galaxy S24", "Hitam", 6.8, 2023, 12, 256, 50, false);
         Samsung.tampilkanInfo();
-        Samsung.isiDaya(50);
-        Samsung.kirimPesan("0812-3456-7890", "Jadi pergi ga?");
+        Samsung.lakukanAktivitas(50);
+        Samsung.lakukanAktivitas("0812-3456-7890", "Jadi pergi ga?");
         System.out.println();
 
         //Objek 2
         Handphone Apple = new Handphone("Apple", "iPhone 15 Pro", "Pink");
         Apple.tampilkanInfo();
-        Apple.kirimPesan("0812-9876-5432", "Hari ini ada asistensi ga?");
+        Apple.lakukanAktivitas();
         System.out.println();
 
         //Objek 3
         Handphone Huawei = new Handphone("Huawei", "Huawei Mate XT", 100);
         Huawei.tampilkanInfo();
-        Huawei.isiDaya(100);
-        Huawei.kirimPesan("0899-1122-3344", "Kayanya ada deh");
+        Huawei.lakukanAktivitas(100);
+        Huawei.lakukanAktivitas("0899-1122-3344", "Kayanya ada deh");
     }
 }
 
@@ -62,8 +62,6 @@ public class Prakpbo5 {
             this.isFull = isFull;
         }
 
-        // Method Overloading 
-        // Method 1
         public void tampilkanInfo() {
             System.out.println("======Informasi Handphone=====");
             System.out.println("Merek Handphone : " + merek);
@@ -76,8 +74,15 @@ public class Prakpbo5 {
             System.out.println("Status Baterai : " + levelBaterai + "%");
         }
 
+        // Method Overloading 
+        // Method 1
+        // Method 1: Melakukan aktivitas tanpa detail tambahan
+        public void lakukanAktivitas() {
+            System.out.println("Handphone sedang digunakan untuk aktivitas biasa.");
+        }
+        
         // Method 2 
-        public void isiDaya(int persentase) { 
+        public void lakukanAktivitas(int persentase) { 
             if (persentase >= 100) {
                 this.isFull = true;
                 this.levelBaterai = 100;
@@ -90,7 +95,7 @@ public class Prakpbo5 {
         }
         
         // Method 3         
-        public void kirimPesan(String nomorTujuan, String isiPesan) { 
+        public void lakukanAktivitas(String nomorTujuan, String isiPesan) { 
             System.out.println("Mengirim pesan kepada " + nomorTujuan);
             System.out.println("Isi pesannya: '" + isiPesan + "'.");
         }
