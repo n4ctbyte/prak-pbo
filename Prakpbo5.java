@@ -76,7 +76,6 @@ public class Prakpbo5 {
 
         // Method Overloading 
         // Method 1
-        // Method 1: Melakukan aktivitas tanpa detail tambahan
         public void lakukanAktivitas() {
             System.out.println("Handphone sedang digunakan untuk aktivitas biasa.");
         }
